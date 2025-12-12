@@ -1,0 +1,9 @@
+{
+  "dos_date_components": {
+    "year": 2024,
+    "month": 5,
+    "day": 20,
+    "base_year_for_calculation": 1980
+  },
+  "formatted_date": "2024-05-20"
+}
