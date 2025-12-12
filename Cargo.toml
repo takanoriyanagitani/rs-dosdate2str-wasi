@@ -1,0 +1,32 @@
+[package]
+name = "rs-dosdate2str-wasi"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+
+[dependencies]
+hex = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[[bin]]
+name = "int2dostime2date2str"
+
+[[bin]]
+name = "hex2le2dostime2date2str"
+
+[[bin]]
+name = "hex2be2dostime2date2str"
+
+[profile.release-wasi]
+inherits = "release"
+lto = true
+strip = true
+opt-level = 'z'
+codegen-units = 1
