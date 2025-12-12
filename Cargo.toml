@@ -3,6 +3,17 @@ name = "rs-dosdate2str-wasi"
 version = "0.1.0"
 edition = "2024"
 
+description = "Converts dostime integer/hex to date string"
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-dosdate2str-wasi"
+homepage = "https://github.com/takanoriyanagitani/rs-dosdate2str-wasi"
+documentation = "https://docs.rs/rs-dosdate2str-wasi/latest"
+keywords = ["dosdate", "dostime", "date", "wasi"]
+
+exclude = [
+	"examples/",
+]
+
 [lints.rust]
 unsafe_code = "forbid"
 
